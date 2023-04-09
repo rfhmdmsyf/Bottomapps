@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/rounded_white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/promo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_header">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:src="@drawable/promo"
+            android:layout_marginTop="-50dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/promo"
+        android:layout_marginTop="-20dp">
+
+        <TextView
+            android:id="@+id/hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello There !"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/piz"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/logopizza"
+            android:layout_toRightOf="@id/hello"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hello"
+            android:text="Select Delivery or Self-Collect to see local deals"
+            android:layout_marginLeft="15dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/Do"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/txt_1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_choose">
+
+        <ImageView
+            android:id="@+id/ojol"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ojol"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery"
+            android:layout_toRightOf="@id/ojol"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Choose your location"
+            android:textSize="10sp"
+            android:layout_below="@id/delivery"
+            android:layout_toRightOf="@id/ojol"
+            android:layout_marginLeft="17dp"/>
+
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="26dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/panah"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/self"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/Do"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_choose">
+
+        <ImageView
+            android:id="@+id/kurir"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/paket" />
+
+        <TextView
+            android:id="@+id/sc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/kurir"
+            android:text="Self-Collect"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sc"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@id/kurir"
+            android:text="Find your nearest Hut"
+            android:textSize="10sp" />
+
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/panah" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/late"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/self"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latest"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="View more"
+            android:textSize="12sp"
+            android:layout_marginRight="17dp"
+            android:textColor="@android:color/holo_green_dark"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/late">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/dual"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

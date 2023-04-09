@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/rounded_white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/isi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_header"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/akun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account and Settings"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginLeft="15dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ogheyy"
+            android:layout_toRightOf="@id/akun"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/akun"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="Sign in to receive exclusive deals,live update on your order status and more."/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign"
+            android:layout_marginTop="25dp"
+            android:layout_centerInParent="true"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_login"/>
+
+        <TextView
+            android:id="@+id/danger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_login"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:text="Don't have an account?"/>
+
+        <TextView
+            android:id="@+id/warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_login"
+            android:layout_toRightOf="@id/danger"
+            android:text="Sign up here"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:textColor="@android:color/holo_green_dark"/>
+
+        <RelativeLayout
+            android:id="@+id/btn_faq"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/warning"
+            android:layout_marginTop="25dp"
+            android:layout_centerInParent="true"
+
+            android:background="@drawable/rounded_kupon">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAQ"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/panah"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_con"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/btn_faq"
+            android:layout_marginTop="25dp"
+            android:layout_centerInParent="true"
+
+            android:background="@drawable/rounded_kupon">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/panah"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-10dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Version 5.0.16"
+            android:layout_below="@id/btn_con"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
